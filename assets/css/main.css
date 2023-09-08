@@ -1965,6 +1965,17 @@ input, select, textarea {
 			position: relative;
 			padding: 3.5em 2.5em 2.5em 2.5em;
 			width: 100%;
+			text-align: center
+		}
+		#main > .panel-document {
+			-moz-transition: opacity 0.25s ease-in-out;
+			-webkit-transition: opacity 0.25s ease-in-out;
+			-ms-transition: opacity 0.25s ease-in-out;
+			transition: opacity 0.25s ease-in-out;
+			margin-bottom: 0;
+			position: relative;
+			padding: 3.5em 2.5em 2.5em 2.5em;
+			width: 100%;
 		}
 
 			#main > .panel.inactive {
@@ -2089,17 +2100,20 @@ input, select, textarea {
 					padding: 3.5em 2.5em;
 					margin-bottom: 0;
 					width: 100%;
+					text-align: center
 				}
 
 					#main > .panel.intro header h1 {
 						line-height: 1.25em;
 						margin-bottom: 0;
+						text-align: center;
 					}
 
 					#main > .panel.intro header p {
 						letter-spacing: -0.015em;
 						font-size: 1.25em;
 						margin: 0.25em 0 0 0;
+						text-align: center
 					}
 
 				@media screen and (max-width: 980px) {
@@ -2120,6 +2134,7 @@ input, select, textarea {
 						#main > .panel.intro header {
 							padding: 4em;
 							text-align: center;
+							
 						}
 
 				}
@@ -2137,56 +2152,8 @@ input, select, textarea {
 						#main > .panel.intro header p {
 							font-size: 1em;
 							margin: 0.25em 0 0 0;
+							text-align: center
 						}
 
 				}
 
-/* Footer */
-
-	#footer {
-		color: rgba(255, 255, 255, 0.45);
-		text-align: center;
-		padding: 2em 0 0 0;
-		font-size: 0.75em;
-	}
-
-		#footer a {
-			color: #ddd;
-			color: rgba(255, 255, 255, 0.65);
-			-moz-transition: color .25s ease-in-out;
-			-webkit-transition: color .25s ease-in-out;
-			-ms-transition: color .25s ease-in-out;
-			transition: color .25s ease-in-out;
-		}
-
-			#footer a:hover {
-				color: white;
-			}
-
-		#footer .copyright {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			#footer .copyright li {
-				display: inline-block;
-				padding-left: 1em;
-				margin-left: 1em;
-				border-left: solid 1px rgba(255, 255, 255, 0.25);
-				line-height: 1;
-			}
-
-				#footer .copyright li:first-child {
-					padding-left: 0;
-					margin-left: 0;
-					border-left: 0;
-				}
-
-		@media screen and (max-width: 736px) {
-
-			#footer .copyright li {
-				padding-left: 0.5em;
-				margin-left: 0.5em;
-			}
-
-		}
